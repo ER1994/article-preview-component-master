@@ -283,7 +283,7 @@ footer {
 
     .share-section__active {
         transform: translate(220%, 30%);
-        width: 4.1875rem;
+        /*width: 4.1875rem;*/
     }
 
 }
