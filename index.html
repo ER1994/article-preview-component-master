@@ -5,25 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>Frontend Mentor | Article preview component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-
-Shift the overall look and feel by adding these wonderful
-touches to furniture in your home
-
-Ever been in a room and felt like something was missing? Perhaps
-it felt slightly bare and uninviting. I’ve got some simple tips
-to help you make any room feel complete.
-
-Michelle Appleton
-28 Jun 2020
-
-Share
-
-<div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-</div>
+<main>
+    <figure class="main-picture">
+        <img src="images/drawers.jpg" alt="Green dresser with decorations">
+    </figure>
+    <article>
+        <div class="content-wrapper">
+            <header>
+                <h1>Shift the overall look and feel by adding these wonderful
+                    touches to furniture in your home
+                </h1>
+            </header>
+            <p>Ever been in a room and felt like something was missing? Perhaps
+                it felt slightly bare and uninviting. I’ve got some simple tips
+                to help you make any room feel complete.
+            </p>
+        </div>
+        <footer>
+            <div class="initial">
+                <div class="author-section">
+                    <figure class="avatar">
+                        <img src="images/avatar-michelle.jpg" alt="Author's picture">
+                    </figure>
+                    <div class="author-details">
+                        <p class="author-details-signature">Michelle Appleton</p>
+                        <p class="author-details-date">28 Jun 2020</p>
+                    </div>
+                </div>
+                <button id="toggle-btn" class="share-btns" type="button">
+<!--                    <img src="images/icon-share.svg" alt="Share button">-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path fill="#6E8098" d="M23.5 16.495L17.266 10.014V13.88H15.941C11.83 13.88 8.5 17.039 8.5 20.936v2.049l.589-.612C11.09 20.294 13.922 19.11 16.89 19.11h.375v3.867L23.5 16.495z"/></svg>
+                </button>
+            </div>
+        </footer>
+    </article>
+    <div id="share-section" class="share-section__hidden">
+        <div class="share-section-links">
+            <p>SHARE</p>
+            <ul>
+                <li><a><img src="images/icon-facebook.svg" alt="Facebook link"></a></li>
+                <li><a><img src="images/icon-twitter.svg" alt="Twitter link"></a></li>
+                <li><a><img src="images/icon-pinterest.svg" alt="Pinterest link"></a></li>
+            </ul>
+        </div>
+        <button id="close-btn" class="share-btns" type="button">
+<!--            <img src="images/icon-share.svg" alt="Share button">-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path fill="#6E8098" d="M23.5 16.495L17.266 10.014V13.88H15.941C11.83 13.88 8.5 17.039 8.5 20.936v2.049l.589-.612C11.09 20.294 13.922 19.11 16.89 19.11h.375v3.867L23.5 16.495z"/></svg>
+        </button>
+    </div>
+    <script src="share-btn.js"></script>
+</main>
 </body>
 </html>
